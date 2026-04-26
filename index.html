@@ -26,16 +26,29 @@
     <div class="noise"></div>
     <header class="site-header" id="siteHeader">
       <a class="logo" href="#top">EG</a>
-      <nav>
+      <nav id="siteNav">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
-        🌙
-      </button>
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          🌙
+        </button>
+        <button
+          id="menuToggle"
+          class="menu-btn"
+          aria-label="Toggle navigation menu"
+          aria-controls="siteNav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="top">

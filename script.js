@@ -2,6 +2,8 @@ const yearEl = document.getElementById("year");
 const themeBtn = document.getElementById("themeToggle");
 const header = document.getElementById("siteHeader");
 const progressBar = document.getElementById("scrollProgress");
+const nav = document.getElementById("siteNav");
+const menuToggle = document.getElementById("menuToggle");
 
 yearEl.textContent = String(new Date().getFullYear());
 
@@ -19,6 +21,26 @@ themeBtn.addEventListener("click", () => {
   localStorage.setItem("theme", isDark ? "dark" : "light");
   themeBtn.textContent = isDark ? "☀️" : "🌙";
 });
+
+if (menuToggle && nav) {
+  const closeMenu = () => {
+    document.body.classList.remove("mobile-nav-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = document.body.classList.toggle("mobile-nav-open");
+    menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) closeMenu();
+  });
+}
 
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
