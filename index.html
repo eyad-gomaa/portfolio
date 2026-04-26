@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eyad Gomaa | Flutter Developer</title>
+    <meta
+      name="description"
+      content="Eyad Gomaa portfolio showcasing Flutter projects, skills, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="noise"></div>
+    <header class="site-header" id="siteHeader">
+      <a class="logo" href="#top">EG</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+        🌙
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero card reveal">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring">
+            <img
+              class="hero-photo"
+              src="./assets/photo.PNG"
+              alt="Eyad Gomaa portrait"
+              onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='grid';"
+            />
+          </div>
+          <div class="hero-photo-fallback" style="display: none">EG</div>
+        </div>
+        <div class="floating-tiles" aria-hidden="true">
+          <div class="tile icon-tile">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+              alt="Flutter"
+            />
+            <span>Flutter</span>
+          </div>
+          <div class="tile icon-tile">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+              alt="Firebase"
+            />
+            <span>Firebase</span>
+          </div>
+          <div class="tile icon-tile">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+            />
+            <span>GitHub</span>
+          </div>
+          <div class="tile icon-tile">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              alt="Figma"
+            />
+            <span>Figma</span>
+          </div>
+        </div>
+
+        <span class="status-pill">
+          <span class="status-dot" aria-hidden="true"></span>
+          Available for freelance and full-time roles
+        </span>
+        <h1>Eyad Gomaa</h1>
+        <p class="role">Flutter Developer</p>
+        <p class="intro">
+          Experienced Flutter developer with 2+ years building high-performance
+          mobile applications using clean architecture, scalable state
+          management, and production-ready integrations.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>2+</strong>
+            <span>Years experience</span>
+          </div>
+          <div class="stat">
+            <strong>6+</strong>
+            <span>Projects shipped</span>
+          </div>
+          <div class="stat">
+            <strong>BLoC · GetX</strong>
+            <span>Architectures</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">
+            Hire me
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-ghost" href="#projects">View projects</a>
+        </div>
+
+        <div class="contact-pills">
+          <a class="contact-link contact-email" href="mailto:eyadgomaa410@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path
+                  d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-11zm2 .6V17.5c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V7.1l-6.18 4.41a1.4 1.4 0 0 1-1.64 0L5 7.1zm1.22-1.1L12 10.14 17.78 6H6.22z"
+                />
+              </svg>
+            </span>
+            <span>eyadgomaa410@gmail.com</span>
+          </a>
+          <a class="contact-link contact-phone" href="tel:+201020301328">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path
+                  d="M6.62 2.95a1.6 1.6 0 0 1 1.72-.4l3 1.2a1.6 1.6 0 0 1 .98 1.79l-.44 2.2a1.6 1.6 0 0 1-1.52 1.29l-1.13.05a13.2 13.2 0 0 0 5.7 5.7l.05-1.13a1.6 1.6 0 0 1 1.29-1.52l2.2-.44a1.6 1.6 0 0 1 1.79.98l1.2 3a1.6 1.6 0 0 1-.4 1.72l-1.86 1.86a3 3 0 0 1-2.8.81c-3.6-.79-7-2.64-9.84-5.48-2.84-2.84-4.69-6.24-5.48-9.84a3 3 0 0 1 .81-2.8L6.62 2.95z"
+                />
+              </svg>
+            </span>
+            <span>+20 1020301328</span>
+          </a>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+          <span class="scroll-cue-label">scroll</span>
+          <span class="scroll-cue-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section id="about" class="section card reveal">
+        <div class="about-head">
+          <span class="about-kicker">Profile</span>
+          <h2>About Me</h2>
+        </div>
+        <p class="about-intro">
+          I build and maintain cross-platform apps with strong focus on code
+          quality, performance, and user experience. My work includes API and
+          payment integrations, Firebase services, realtime features, and
+          structured architecture patterns such as Clean Architecture and MVVM.
+        </p>
+        <div class="about-highlights">
+          <span>Clean Architecture</span>
+          <span>Production-ready Flutter</span>
+          <span>Realtime + Payments</span>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Engineering</h3>
+            <p>Maintainable code, clear layers, and scalable app structure.</p>
+          </article>
+          <article class="about-card">
+            <h3>Delivery</h3>
+            <p>From feature idea to release with performance and reliability.</p>
+          </article>
+          <article class="about-card">
+            <h3>Collaboration</h3>
+            <p>Strong coordination with backend, design, QA, and product teams.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section card reveal">
+        <div class="section-head">
+          <span class="section-kicker">Career</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Vondera</h3>
+            <p class="timeline-meta">Flutter Developer | 07/2025 - Present</p>
+            <p>
+              Built and maintained a production cross-platform e-commerce app,
+              improved release stability, and delivered features in
+              collaboration with backend, operations, and UI/UX teams.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <h3>Athr</h3>
+            <p class="timeline-meta">Flutter Developer | 07/2024 - 03/2026</p>
+            <p>
+              Developed mobile products for multiple clients, refactored legacy
+              flows, and implemented scalable testable features with Clean
+              Architecture and BLoC.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <span class="section-kicker">Portfolio</span>
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project card tilt">
+            <h3>Vondera</h3>
+            <p>
+              Production Flutter dashboard and operations app for e-commerce
+              workflows including orders, payments, products, and warehouse
+              management with multilingual support.
+            </p>
+            <ul>
+              <li>Flutter</li>
+              <li>GetX</li>
+              <li>REST APIs</li>
+            </ul>
+          </article>
+          <article class="project card tilt">
+            <h3>G-Zone</h3>
+            <p>
+              Real-time social gaming app with live voice rooms, instant
+              messaging, moderation flows, and interactive profile experiences.
+            </p>
+            <ul>
+              <li>Flutter</li>
+              <li>BLoC</li>
+              <li>Realtime Communication</li>
+            </ul>
+          </article>
+          <article class="project card tilt">
+            <h3>Kingdom of Steps</h3>
+            <p>
+              Gamified step-tracking app with quests and challenges, integrated
+              HealthKit and Google Fit, plus realtime voice features.
+            </p>
+            <ul>
+              <li>Flutter</li>
+              <li>Zego Engine</li>
+              <li>Socket.io</li>
+            </ul>
+          </article>
+          <article class="project card tilt">
+            <h3>Mehna</h3>
+            <p>
+              Service marketplace app connecting providers and customers with
+              secure authentication, realtime chat, and scalable modular
+              architecture.
+            </p>
+            <ul>
+              <li>Flutter</li>
+              <li>BLoC/Cubit</li>
+              <li>Firebase</li>
+            </ul>
+          </article>
+          <article class="project card tilt">
+            <h3>o2diet</h3>
+            <p>
+              Meal-planning and calorie-tracking app with subscription flows,
+              background step tracking, and robust API-driven architecture.
+            </p>
+            <ul>
+              <li>Flutter</li>
+              <li>Clean Architecture</li>
+              <li>FCM</li>
+            </ul>
+          </article>
+          <article class="project card tilt">
+            <h3>Vshop</h3>
+            <p>
+              Multi-vendor e-commerce app with multi-checkout flow, deep
+              linking, and Firebase messaging/crash reporting support.
+            </p>
+            <ul>
+              <li>Flutter</li>
+              <li>GetX</li>
+              <li>Firebase</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section card reveal">
+        <div class="section-head">
+          <span class="section-kicker">Toolbox</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="logo-grid">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+            alt="Apple iOS"
+            title="Apple iOS"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+            alt="Android"
+            title="Android"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+            alt="Flutter"
+            title="Flutter"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+            alt="Dart"
+            title="Dart"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+            alt="Firebase"
+            title="Firebase"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt="Git"
+            title="Git"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="GitHub"
+            title="GitHub"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            alt="Figma"
+            title="Figma"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+            alt="Google Cloud"
+            title="Google Cloud"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+            alt="Postman"
+            title="Postman"
+          />
+          </div>
+          <div class="chips">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Firebase</span>
+            <span>Dio/HTTP</span>
+            <span>REST APIs</span>
+            <span>BLoC</span>
+            <span>GetX</span>
+            <span>Provider</span>
+            <span>Clean Architecture</span>
+            <span>MVVM</span>
+            <span>Stripe/PayPal</span>
+            <span>Socket.io / Pusher</span>
+            <span>Zego Engine</span>
+            <span>App Store / Play Store</span>
+            <span>Git/GitHub</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section card cta reveal">
+        <h2>Let’s Build Something Great</h2>
+        <p>
+          Interested in collaboration? Send me a message and I will reply as
+          soon as possible.
+        </p>
+        <a href="mailto:eyadgomaa410@gmail.com" class="btn">Send Email</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Eyad Gomaa. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
