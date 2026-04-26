@@ -22,6 +22,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -137,7 +138,7 @@ nav a:hover {
 
 main {
   width: min(1100px, 92vw);
-  margin: 0 auto 48px;
+  margin: 14px auto 56px;
   display: grid;
   gap: 18px;
 }
@@ -160,12 +161,16 @@ main {
 
 .hero {
   position: relative;
+  margin-top: 6px;
+  scroll-margin-top: 116px;
   padding: 38px 38px 64px;
+  min-height: min(82vh, 760px);
   overflow: hidden;
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 28px;
   align-items: center;
+  align-content: center;
   border-color: color-mix(in srgb, var(--stroke) 80%, var(--primary));
   background:
     radial-gradient(
@@ -1057,7 +1062,9 @@ body.dark .contact-icon {
   .hero {
     grid-template-columns: 1fr;
     justify-items: start;
+    margin-top: 2px;
     padding: 118px 22px 40px;
+    min-height: auto;
   }
 
   .hero-photo-wrap {

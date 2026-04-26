@@ -6,9 +6,12 @@ const progressBar = document.getElementById("scrollProgress");
 yearEl.textContent = String(new Date().getFullYear());
 
 const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
+const isDarkByDefault = savedTheme !== "light";
+if (isDarkByDefault) {
   document.body.classList.add("dark");
   themeBtn.textContent = "☀️";
+} else {
+  themeBtn.textContent = "🌙";
 }
 
 themeBtn.addEventListener("click", () => {
